@@ -1,2 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+/* Daisy Ui customize theme */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  /* btn color */
+  --color-primary: #4caf50;
+  /* Bg color or hover effect */
+  --color-secondary: #81c784;
+  --color-accent: #ffc107;
+  --color-neutral: #f9f9f9;
+  --color-error:#E57373;
+  --color-success:#66BB6A
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
