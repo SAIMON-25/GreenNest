@@ -1,0 +1,251 @@
+[
+  {
+    "plantId": 1,
+
+    "plantName": "Snake Plant",
+
+    "category": "Air Purifier",
+
+    "price": 18,
+
+    "rating": 4.8,
+
+    "availableStock": 10,
+
+    "careLevel": "Easy",
+
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPQIeREqmYeAyVbUv_Zpu0Vo2tr67hf9UnA&s",
+
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Golden Pothos",
+    "category": "Air Purifier",
+    "price": 22,
+    "rating": 4.7,
+    "availableStock": 25,
+    "careLevel": "Easy",
+    "description": "The Golden Pothos is a classic for a reason. Its heart-shaped, variegated leaves cascade beautifully, making it perfect for hanging baskets or shelves. It's incredibly resilient and is renowned for its ability to filter airborne toxins like formaldehyde and carbon monoxide, making your space healthier.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3D1fI0V95jUof56RLMaRrm4iQaydHhyZAA&s",
+    "providerName": "GreenNest Gardens"
+  },
+  {
+    "plantId": 3,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 30,
+    "rating": 4.9,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "Meet the 'Zamioculcas zamiifolia,' or ZZ Plant, the ultimate plant for beginners or forgetful waterers. Its wide, waxy, dark green leaves are so glossy they look artificial. It thrives on neglect and can tolerate the lowest light conditions, making it ideal for offices or dim corners.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmzAXfi9T28nxheFenRNmtffl7DiAQakqZxA&s",
+    "providerName": "LeafyLyfe"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Monstera Deliciosa",
+    "category": "Foliage",
+    "price": 45,
+    "rating": 4.8,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "The iconic 'Swiss Cheese Plant' is a statement piece. Its large, glossy leaves develop dramatic natural splits (fenestrations) as it matures. It brings a bold, tropical vibe to any room and loves bright, indirect light. A must-have for any plant enthusiast looking to add architectural beauty.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYxgnVBJUCubfXb7F2WFo7TzhFTbOCdWYEBSq3zEXj-CXcB7UucKER1urJc_i0HA6KTI&usqp=CAU",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 28,
+    "rating": 4.6,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "The Peace Lily is beloved for its elegant white spathes (flowers) that rise above lush, dark green foliage. It's also an air-purifying powerhouse. Its best feature? It 'tells' you when it's thirsty with a dramatic droop, perking right back up after watering.",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/4c1f7d348834d1746ad94e4f5957f9d8.jpg_720x720q80.jpg",
+    "providerName": "GreenNest Gardens"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Spider Plant",
+    "category": "Pet Friendly",
+    "price": 19,
+    "rating": 4.7,
+    "availableStock": 30,
+    "careLevel": "Easy",
+    "description": "The resilient Spider Plant features arching, grass-like leaves, often with a white stripe. It's famous for producing 'spiderettes,' or baby plants, that dangle from the mother plant. It's non-toxic to cats and dogs, making it a perfect, safe choice for pet owners.",
+    "image": "https://m.media-amazon.com/images/I/61bfaK6hWpL._AC_UF1000,1000_QL80_.jpg",
+    "providerName": "AeroFlora"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Foliage",
+    "price": 75,
+    "rating": 4.2,
+    "availableStock": 5,
+    "careLevel": "Hard",
+    "description": "The Fiddle Leaf Fig is the 'it' plant of interior design. With its huge, violin-shaped, leathery leaves, it demands attention. It's notoriously fickle and requires a specific routine of bright, consistent light and careful watering, but the visual reward is unmatched.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzyD681Fa3_CvDTFSPRFDA8924ChBR4jgTw&s",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Rubber Plant",
+    "category": "Foliage",
+    "price": 35,
+    "rating": 4.5,
+    "availableStock": 12,
+    "careLevel": "Medium",
+    "description": "A robust classic, the Rubber Plant (Ficus elastica) boasts stunning, dark, burgundy-tinged leaves that are exceptionally shiny. It's a forgiving plant that can grow into an impressive indoor tree, adding vertical height and drama to your living space. Prefers bright, indirect light.",
+    "image": "https://cdn.shopify.com/s/files/1/0062/8532/8445/products/Rubber_Tree_BB.jpg?v=1666970708",
+    "providerName": "LeafyLyfe"
+  },
+  {
+    "plantId": 9,
+    "plantName": "Prayer Plant (Maranta)",
+    "category": "Pet Friendly",
+    "price": 26,
+    "rating": 4.6,
+    "availableStock": 18,
+    "careLevel": "Medium",
+    "description": "The Prayer Plant is fascinating to watch. Its striking, patterned leaves feature intricate veining in shades of red, cream, and green. At night, the leaves fold up as if in prayer. It's pet-friendly and loves high humidity, making it perfect for a bright bathroom or kitchen.",
+    "image": "https://www.happyhouseplants.co.uk/cdn/shop/articles/Maranta_4.jpg?v=1646653024",
+    "providerName": "GreenNest Gardens"
+  },
+  {
+    "plantId": 10,
+    "plantName": "Jade Plant",
+    "category": "Succulent",
+    "price": 20,
+    "rating": 4.5,
+    "availableStock": 22,
+    "careLevel": "Easy",
+    "description": "The Jade Plant is a popular succulent symbolizing good luck. It features thick, woody stems and fleshy, oval-shaped leaves. It's an incredibly long-lived plant that is easy to care for, requiring infrequent watering and plenty of sunlight. Perfect for a sunny windowsill.",
+    "image": "https://nurserynisarga.in/wp-content/uploads/2024/12/daimond-white-2.webp",
+    "providerName": "AeroFlora"
+  },
+  {
+    "plantId": 11,
+    "plantName": "Aloe Vera",
+    "category": "Succulent",
+    "price": 16,
+    "rating": 4.4,
+    "availableStock": 35,
+    "careLevel": "Easy",
+    "description": "Both functional and beautiful, the Aloe Vera plant is a must-have. Its spiky, fleshy leaves contain a soothing gel that can be used to treat minor burns and skin irritations. It's a hardy succulent that loves bright, direct sunlight and very little water.",
+    "image": "https://www.healthyhouseplants.com/wp-content/uploads/2024/08/Aloe_Vera-1200x1200.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 12,
+    "plantName": "Chinese Money Plant",
+    "category": "Pet Friendly",
+    "price": 29,
+    "rating": 4.7,
+    "availableStock": 14,
+    "careLevel": "Medium",
+    "description": "The Pilea Peperomioides, or Chinese Money Plant, is cherished for its unique, coin-shaped leaves that hover on slender stems. It's a fast-grower that produces 'pups' you can share with friends. Its minimalist, modern look makes it a favorite among designers. Safe for pets!",
+    "image": "https://www.healthyhouseplants.com/wp-content/uploads/2024/08/Chinese-Money-Pilea.jpg",
+    "providerName": "LeafyLyfe"
+  },
+  {
+    "plantId": 13,
+    "plantName": "Boston Fern",
+    "category": "Air Purifier",
+    "price": 24,
+    "rating": 4.3,
+    "availableStock": 16,
+    "careLevel": "Medium",
+    "description": "The Boston Fern is a lush, classic houseplant with feathery, sword-shaped fronds. It's an excellent natural air humidifier and purifier. It thrives in high humidity and indirect light, making it a fantastic addition to a bathroom or kitchen, or in a hanging basket.",
+    "image": "https://www.jacksonandperkins.com/images/xxl/28757.jpg",
+    "providerName": "GreenNest Gardens"
+  },
+  {
+    "plantId": 14,
+    "plantName": "Calathea Rattlesnake",
+    "category": "Pet Friendly",
+    "price": 32,
+    "rating": 4.5,
+    "availableStock": 10,
+    "careLevel": "Hard",
+    "description": "A true show-stopper from the 'Prayer Plant' family, the Rattlesnake Plant features wavy, bright green leaves with a striking pattern of dark green 'spots'. The undersides are a deep, rich purple. It requires high humidity and filtered water to prevent brown edges.",
+    "image": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/158451lx.jpg?width=545&height=597&auto=webp",
+    "providerName": "AeroFlora"
+  },
+  {
+    "plantId": 15,
+    "plantName": "Areca Palm",
+    "category": "Air Purifier",
+    "price": 50,
+    "rating": 4.4,
+    "availableStock": 9,
+    "careLevel": "Medium",
+    "description": "Bring a touch of the tropics indoors with the Areca Palm. Its feathery, arching fronds create a graceful fountain of greenery. It's one of the top plants for purifying the air and also acts as a natural humidifier. It needs bright, indirect light and consistent moisture.",
+    "image": "https://cdn.shopify.com/s/files/1/0553/5711/2435/files/1_b1bf95c8-32d3-4fb5-9550-dffc2a07ded6_480x480.webp?v=1722233205",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 16,
+    "plantName": "String of Pearls",
+    "category": "Succulent",
+    "price": 23,
+    "rating": 4.1,
+    "availableStock": 11,
+    "careLevel": "Hard",
+    "description": "This unique and delicate succulent features long, trailing stems of small, bead-like 'pearls.' It's a stunning trailing plant for a hanging pot in a bright spot. It's tricky to care for, as it's highly susceptible to root rot. Requires sandy soil and very careful watering.",
+    "image": "https://www.bhg.com/thmb/N9xZDE9lmN0KiUCShi2o9axRkZk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/BHG-How-to-Grow-and-Care-for-String-of-Pearls-Plant-101013958-ec44a47102af4e52ab067f21cc26efc2.jpg",
+    "providerName": "LeafyLyfe"
+  },
+  {
+    "plantId": 17,
+    "plantName": "Aglaonema 'Silver Bay'",
+    "category": "Low Light",
+    "price": 33,
+    "rating": 4.8,
+    "availableStock": 17,
+    "careLevel": "Easy",
+    "description": "Also known as the Chinese Evergreen, this 'Silver Bay' variety is incredibly adaptable and stylish. Its broad, spear-shaped leaves are painted with a beautiful silver-green variegation. It tolerates low light and infrequent watering, making it a perfect, colorful beginner plant.",
+    "image": "https://plantproper.com/cdn/shop/files/Plant-Proper-Aglaonema-Silver-Bay--6_650x.jpg?v=1722526547",
+    "providerName": "GreenNest Gardens"
+  },
+  {
+    "plantId": 18,
+    "plantName": "Bird's Nest Fern",
+    "category": "Pet Friendly",
+    "price": 27,
+    "rating": 4.5,
+    "availableStock": 13,
+    "careLevel": "Medium",
+    "description": "The Bird's Nest Fern gets its name from the fuzzy, brown center that resembles a bird's nest. It produces long, wavy, bright green fronds that grow in a rosette. Unlike other ferns, its leaves are whole, not feathery. It loves humidity and is safe for pets.",
+    "image": "https://img.crocdn.co.uk/images/products2/pl/20/00/02/81/pl2000028174_card3_lg.jpg",
+    "providerName": "AeroFlora"
+  },
+  {
+    "plantId": 19,
+    "plantName": "Hoya Carnosa 'Tricolor'",
+    "category": "Flowering",
+    "price": 29,
+    "rating": 4.6,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "The Hoya, or 'Wax Plant,' is a trailing vine with thick, waxy leaves. This 'Tricolor' variety features beautiful variegation with splashes of pink, cream, and green. When mature, it produces stunning, star-shaped, fragrant flower clusters. A very low-maintenance beauty.",
+    "image": "https://plnts.com/_next/image?url=https%3A%2F%2Fwebshop.plnts.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Faa5d334f459227518b6c3cf7ea9d29ed%2Fp%2Fl%2Fpl.l.043-1-0106.jpg&w=828&q=80",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 20,
+    "plantName": "Heartleaf Philodendron",
+    "category": "Low Light",
+    "price": 18,
+    "rating": 4.7,
+    "availableStock": 28,
+    "careLevel": "Easy",
+    "description": "The quintessential vining plant. The Heartleaf Philodendron is incredibly forgiving and fast-growing, with deep green, heart-shaped leaves. It can be trained to climb a moss pole or left to trail gracefully from a high shelf. It adapts well to almost any light condition.",
+    "image": "https://images.unsplash.com/photo-1537039557108-4a42c334fd5e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1935",
+    "providerName": "LeafyLyfe"
+  }
+]
