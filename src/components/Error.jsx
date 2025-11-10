@@ -10,6 +10,7 @@ const Error = () => {
         <img className="rounded-full" src={errorImage} alt="" />
       </div>
       <div className="text-center">
+        <h1 className="text-4xl font-bold text-green-600 mb-5">Page Not Found</h1>
         <Link to={'/'} className="btn btn-primary">
           {" "}
           <span>
