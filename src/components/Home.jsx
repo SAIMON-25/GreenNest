@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import Slider from "./Slider";
 import TopPlants from "./TopPlants";
 import Tips from "./Tips";
+import Experts from "./Experts";
 
 const Home = () => {
   const [plants, setPlants] = useState([]);
@@ -37,6 +38,7 @@ const Home = () => {
       </div>
       <TopPlants plants={plants}></TopPlants>
       <Tips></Tips>
+      <Experts></Experts>
     </div>
   );
 };

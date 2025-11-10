@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Sophia Greenfield",
+    "specialization": "Indoor Plant Care Specialist",
+    "photo": "https://m.media-amazon.com/images/S/amzn-author-media-prod/99he523ul16s46kgll36bpv9t9._SY600_.jpg",
+    "bio": "Sophia has over 10 years of experience in nurturing air-purifying plants and helping homes become greener spaces."
+  },
+  {
+    "id": 2,
+    "name": "Liam Carter",
+    "specialization": "Hydroponic Growth Expert",
+    "photo": "https://m.media-amazon.com/images/S/amzn-author-media-prod/tk05npo0s1dgr1onichu5kd4pr._SY450_CR0%2C0%2C450%2C450_.jpg",
+    "bio": "Liam specializes in hydroponic systems and soil-free plant nutrition, perfecting the art of sustainable indoor gardening."
+  },
+  {
+    "id": 3,
+    "name": "Ava Patel",
+    "specialization": "Botanical Designer & Eco Decor Advisor",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRILo3NvH2RvkJL5b3P0Y3MVoxgiJS0WIzYsg&s",
+    "bio": "Ava blends design and botany to create calming interiors filled with lush greenery and natural balance."
+  },
+  {
+    "id": 4,
+    "name": "Ethan Rivera",
+    "specialization": "Plant Health & Disease Consultant",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0UDumuqfS2qox6u49upjZIwUI88PgDjzAHw&s",
+    "bio": "Ethan helps plant owners diagnose and treat common indoor plant issues using eco-friendly methods."
+  },
+  {
+    "id": 5,
+    "name": "Mia Chen",
+    "specialization": "Succulent & Cactus Care Expert",
+    "photo": "https://trademe.tmcdn.co.nz/tm/property/agent_individual_profile/agent_individual_profile8615182v1.jpg",
+    "bio": "Mia has mastered water-efficient plant care, teaching how to keep succulents thriving year-round."
+  }
+]
