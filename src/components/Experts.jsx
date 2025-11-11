@@ -25,7 +25,7 @@ const Experts = () => {
         
             <div
             key={expert.id}
-            className="card shadow-md bg-green-100 p-4 w-64 sm:w-96 mr-10 "
+            className="card shadow-md bg-green-50 p-4 w-64 sm:w-96 mr-10 "
           >
             <img
               src={expert.photo}

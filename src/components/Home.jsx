@@ -4,6 +4,7 @@ import Slider from "./Slider";
 import TopPlants from "./TopPlants";
 import Tips from "./Tips";
 import Experts from "./Experts";
+import Decoration from "./Decoration";
 
 const Home = () => {
   const [plants, setPlants] = useState([]);
@@ -39,6 +40,7 @@ const Home = () => {
       <TopPlants plants={plants}></TopPlants>
       <Tips></Tips>
       <Experts></Experts>
+      <Decoration></Decoration>
     </div>
   );
 };
