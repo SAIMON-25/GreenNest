@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
 const PlantCard = ({ plant }) => {
-  const { image,plantName, rating,price ,category} = plant;
+  const { image,plantName, rating,price ,category,plantId} = plant;
   return (
-    <div className="card bg-base-100 shadow-md">
+    <div className="card bg-base-100 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-500">
       <figure>
         <img
         className="w-96 h-80"
@@ -19,10 +20,10 @@ const PlantCard = ({ plant }) => {
        <div className="border border-green-300"></div>
        <div className="flex justify-between">
             <h1 className=" px-2 py-1 rounded-2xl bg-green-200 ">{category}</h1>
-            <h1 className="bg-accent text-white px-2 py-1 rounded-2xl">Rating: {rating}</h1>
+            <h1 className="bg-accent text-white px-2 py-1 rounded-2xl">Rating: ⭐ {rating}</h1>
        </div>
         <div className="card-actions justify-end mt-2">
-          <button className="btn btn-primary text-white">Views Details</button>
+          <Link to={`/plants/${plantId}`} className="btn btn-primary text-white">Views Details</Link>
         </div>
       </div>
     </div>

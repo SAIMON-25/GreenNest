@@ -2,7 +2,7 @@ import React from "react";
 
 const Tips = () => {
   return (
-   <div>
+   <div className="mx-10">
 
     <h1 className='text-center text-4xl font-bold my-10 text-green-500'>Tips & Care</h1>
 

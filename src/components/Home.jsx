@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React,{useState,useEffect} from "react";
 import { Link } from "react-router";
 import Slider from "./Slider";
 import TopPlants from "./TopPlants";
@@ -8,7 +8,9 @@ import Decoration from "./Decoration";
 
 const Home = () => {
   const [plants, setPlants] = useState([]);
+  // const data = useLoaderData();
 
+  // setPlants(data);
   useEffect(() => {
     fetch("plants.json")
       .then((result) => result.json())

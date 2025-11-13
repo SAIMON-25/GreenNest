@@ -1,11 +1,14 @@
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router";
 import userIcon from '../assets/user.png'
+import AuthContext from "../context/AuthContext";
 
 const Navbar = () => {
-    const [user,setUser] = useState({});
+    // const {user} = useContext(AuthContext);
+    const user = null;
 
+    
 
   const navLinks = (
     <>
