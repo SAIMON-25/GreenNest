@@ -1,13 +1,20 @@
-
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router";
 import userIcon from '../assets/user.png'
 import AuthContext from "../context/AuthContext";
+import toast, { Toaster } from "react-hot-toast";
+
+
 
 const Navbar = () => {
-    // const {user} = useContext(AuthContext);
-    const user = null;
-
+    const {user,logoutUser} = useContext(AuthContext);
+  
+  const handleLogout = ()=>{
+    logoutUser()
+    .then(()=>{
+      toast.success('Successfully Logout!!!')
+    })
+  }
     
 
   const navLinks = (
@@ -94,7 +101,7 @@ const Navbar = () => {
                 <span className="font-semibold text-primary">{user.displayName || "User"}</span>
               </li>
               <li>
-                <button  className="text-error hover:text-error">
+                <button onClick={handleLogout} className="text-error hover:text-error">
                   Logout
                 </button>
               </li>
@@ -111,6 +118,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+       <Toaster />
     </div>
   );
 };

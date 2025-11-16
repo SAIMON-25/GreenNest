@@ -6,6 +6,7 @@ import PlantsLayout from "../Layouts/PlantsLayout";
 import PlantDetails from "../components/PlantDetails";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import PrivateRoute from "../private/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -27,17 +28,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/plants/:id",
-        element: <PlantDetails></PlantDetails>,
+        element: (
+          <PrivateRoute>
+            <PlantDetails></PlantDetails>
+          </PrivateRoute>
+        ),
         loader: () => fetch("plants.json"),
       },
       {
-        path:'/login',
-        element:<Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path:'/register',
-        element:<Register></Register>
-      }
+        path: "/register",
+        element: <Register></Register>,
+      },
     ],
   },
 ]);

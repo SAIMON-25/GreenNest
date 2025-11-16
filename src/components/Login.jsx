@@ -6,7 +6,6 @@ import toast, { Toaster } from "react-hot-toast";
 
 
 
-const notify = () => toast.error('Invalid Credential');
 
 
 const Login = () => {
@@ -19,18 +18,18 @@ const Login = () => {
     const password = e.target.password.value;
 
     loginUser(email, password)
-      .then((result) => {
-        console.log(result);
+      .then(() => {
+        toast.success('Successfully Login')
       })
       .catch(() => {
-       notify()
+       toast.error('Invalid Credential');
       });
 
     e.target.reset();
   };
 
   return (
-    <div className="min-h-screen bg-base-200 flex justify-center items-center px-4">
+    <div className={` min-h-screen bg-base-200 flex justify-center items-center px-4`}>
       <div className="card w-full max-w-md shadow-xl bg-base-100 p-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-6">
           Login to GreenNest

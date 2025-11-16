@@ -12,7 +12,7 @@ const Slider = ({ plants }) => {
       spaceBetween={30}
       centeredSlides={true}
       slidesPerView={2}
-      loop={Infinity}
+      // loop={Infinity}
       autoplay={{
         delay: 1000,
         disableOnInteraction: false,
