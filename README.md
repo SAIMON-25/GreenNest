@@ -6,8 +6,9 @@ The goal of this project is to promote eco-friendly lifestyle habits and make in
 ---
 
 ## 🚀 Live Project  
-**🔗 Live Site:** https://your-live-site-link.com  
-**🔗 GitHub Repo:** https://github.com/your-repo-name
+**🔗 Live Site:** https://greennest-678e4.web.app/  
+
+**🔗 GitHub Repo:** https://github.com/SAIMON-25/GreenNest
 
 ---
 
