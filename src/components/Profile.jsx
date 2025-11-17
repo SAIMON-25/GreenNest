@@ -5,7 +5,7 @@ import AuthContext from "../context/AuthContext";
 import userIcon from "../assets/user.png";
 
 const Profile = () => {
-  const { user } = useContext(AuthContext);
+  const { user, updateUser } = useContext(AuthContext);
 
   const [name, setName] = useState(user?.displayName || "");
   const [photo, setPhoto] = useState(user?.photoURL || "");
@@ -13,7 +13,7 @@ const Profile = () => {
   const handleUpdate = () => {
     if (!name || !photo) return toast.error("Please fill all fields");
 
-    updateProfile(user, { displayName: name, photoURL: photo })
+    updateUser(name, photo)
       .then(() => toast.success("Profile updated"))
       .catch((err) => toast.error(err.message));
   };

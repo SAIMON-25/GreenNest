@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import AuthContext from "../context/AuthContext";
 import toast, { Toaster } from "react-hot-toast";
-
+import { BsEye, BsEyeSlash } from "react-icons/bs";
 const Register = () => {
-  const { createUser, loginWithGoogle } = useContext(AuthContext);
+    const [show,setShow] = useState(false);
+  const { createUser, loginWithGoogle,updateUser } = useContext(AuthContext);
 
   const navigate = useNavigate();
   const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
@@ -22,16 +23,20 @@ const Register = () => {
     const password = e.target.password.value;
     const photoUrl = e.target.photoUrl.value;
 
+
     if (!passwordRegex.test(password)) {
       toast.error(
         "Password must contain upper & lower case letters and be at least 6 characters long."
       );
+      return;
     }
 
     createUser(email, password)
       .then(() => {
         // console.log(result.user);
         navigate("/");
+        updateUser(name,photoUrl);
+
       })
       .catch((error) => {
         toast.error(error.message);
@@ -81,10 +86,17 @@ const Register = () => {
             />
           </div>
 
-          <div className="form-control">
+          <div className="form-control relative">
+            <div
+              onClick={() => setShow(!show)}
+              className="absolute right-2 top-9 z-10 cursor-pointer "
+            >
+              {show ? <BsEyeSlash></BsEyeSlash> : <BsEye></BsEye>}
+            </div>
             <label className="label font-semibold">Password</label>
             <input
-              type="password"
+              type={`${show ? "text" : "password"}`}
+        
               name="password"
               placeholder="Create a password"
               className="input input-bordered w-full"

@@ -1,17 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import AuthContext from "../context/AuthContext";
 import toast, { Toaster } from "react-hot-toast";
+import { Eye } from "lucide";
+import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const Login = () => {
-  const { loginUser, loginWithGoogle } = useContext(AuthContext);
+  const [show,setShow] = useState(false);
+  const {loginUser, loginWithGoogle } = useContext(AuthContext);
 
   const location = useLocation();
   console.log(location);
   const navigate = useNavigate();
 
-
+ 
   const handleGoogleLogin =()=>{
     loginWithGoogle()
     .then(()=>{
@@ -58,17 +61,24 @@ const Login = () => {
               className="input input-bordered w-full"
             />
           </div>
-          <div className="form-control">
+          <div className="form-control relative">
+
+            <div onClick={()=>setShow(!show)} className="absolute right-2 top-9 z-10 cursor-pointer ">
+            {
+              show?<BsEyeSlash></BsEyeSlash>:<BsEye></BsEye>
+            }
+            </div>
+
             <label className="label font-semibold">Password</label>
             <input
-              type="password"
+              type={`${show ? 'text' : 'password'}`}
               name="password"
               placeholder="Enter your password"
               className="input input-bordered w-full"
             />
             <label className="label text-sm">
               <Link
-                to="/forgot-password"
+                to="/forgetpassword"
                 className="text-primary hover:underline"
               >
                 Forgot Password?
