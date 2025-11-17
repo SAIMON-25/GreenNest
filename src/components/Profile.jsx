@@ -1,27 +1,37 @@
 import React, { useContext, useState } from "react";
-import { updateProfile } from "firebase/auth";
 import { toast } from "react-hot-toast";
 import AuthContext from "../context/AuthContext";
 import userIcon from "../assets/user.png";
+import auth from "../firebase/firebase.config";
 
 const Profile = () => {
-  const { user, updateUser } = useContext(AuthContext);
+  const { user, updateUser, setUser } = useContext(AuthContext);
 
   const [name, setName] = useState(user?.displayName || "");
   const [photo, setPhoto] = useState(user?.photoURL || "");
 
-  const handleUpdate = () => {
-    if (!name || !photo) return toast.error("Please fill all fields");
+  const handleUpdate = async () => {
+    if (!name || !photo) {
+      return toast.error("Please fill all fields");
+    }
 
-    updateUser(name, photo)
-      .then(() => toast.success("Profile updated"))
-      .catch((err) => toast.error(err.message));
+    try {
+      await updateUser(name, photo);
+
+      await auth.currentUser.reload();
+
+      setUser(auth.currentUser);
+
+      toast.success("Profile updated!");
+    } catch (error) {
+      toast.error(error.message);
+    }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-base-200 to-green-100 flex items-center justify-center px-4 py-10">
+    <div className="min-h-screen bg-linear-to-br from-green-50 via-base-200 to-green-100 flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-3xl bg-white/80 backdrop-blur-lg shadow-2xl rounded-2xl grid md:grid-cols-2 overflow-hidden">
-        <div className="bg-gradient-to-br from-green-600 to-green-400 text-white flex flex-col items-center justify-center p-8 gap-4">
+        <div className="bg-linear-to-br from-green-600 to-green-400 text-white flex flex-col items-center justify-center p-8 gap-4">
           <img
             src={photo || userIcon}
             alt="Avatar"

@@ -18,8 +18,6 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-
-
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
@@ -30,32 +28,32 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const logoutUser = () => {
-    return signOut(auth);
-  };
+  const logoutUser = () => signOut(auth);
+
   const loginWithGoogle = () => {
     setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
-  const updateUser = (name, photo) => {
-    return updateProfile(user, { displayName: name, photoURL: photo });
+  const updateUser = async (name, photo) => {
+    await updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: photo,
+    });
+
+    await auth.currentUser.reload();
+    setUser({ ...auth.currentUser });  
   };
 
-
-  const changePassword = (email) => {
-    return sendPasswordResetEmail(auth, email);
-  };
+  const changePassword = (email) => sendPasswordResetEmail(auth, email);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
+      setUser(currentUser ? { ...currentUser } : null);
       setLoading(false);
     });
 
-    return () => {
-      unsubscribe();
-    };
+    return () => unsubscribe();
   }, []);
 
   const authInfo = {
@@ -67,6 +65,7 @@ const AuthProvider = ({ children }) => {
     loading,
     updateUser,
     changePassword,
+    setUser,
   };
 
   return <AuthContext value={authInfo}>{children}</AuthContext>;
