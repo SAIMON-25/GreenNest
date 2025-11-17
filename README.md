@@ -1,16 +1,58 @@
-# React + Vite
+# 🌿 GreenNest – Indoor Plant Marketplace & Care Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GreenNest is a modern and interactive web application designed for plant lovers who want to explore, learn, and purchase indoor plants.  
+The goal of this project is to promote eco-friendly lifestyle habits and make indoor gardening easier through plant discovery, care guides, and expert consultation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Project  
+**🔗 Live Site:** https://your-live-site-link.com  
+**🔗 GitHub Repo:** https://github.com/your-repo-name
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Core Features
 
-## Expanding the ESLint configuration
+### 🌱 User Features
+- Email & Google authentication (Firebase)
+- Update profile with name and photo
+- Protected routes for authenticated users
+- Display real-time user avatar and name
+- Book consultation form on plant details page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🏡 Plant Marketplace
+- Dynamic plant listing from JSON data
+- Detailed plant information including price, rating, description & stock
+- Category-based filtering
+- "Top Rated" plants display section
+- Randomized “Plant of the Week” section
+
+### 🎨 UI/UX & Design
+- Fully responsive, modern UI
+- TailwindCSS + DaisyUI themed styling
+- Attractive hero banner using sliders
+- Plant photo gallery section
+- Smooth hover and gradient effects
+
+### 👩‍🏫 Additional Informative Sections
+- Plant Care Tips (watering, fertilizing, sunlight)
+- Meet Plant Experts section (dynamic data)
+- Consultation booking form (toast confirmation)
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+| Category | Technology |
+|----------|------------|
+| Framework | React.js |
+| CSS | TailwindCSS & DaisyUI |
+| Authentication | Firebase Auth |
+| Routing | React Router |
+| Notifications | React Hot Toast |
+| Icons | React Icons |
+| Slider | Swiper.js  |
+| State |  Context API |
+
+
+
