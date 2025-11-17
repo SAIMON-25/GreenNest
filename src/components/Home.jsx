@@ -5,6 +5,7 @@ import TopPlants from "./TopPlants";
 import Tips from "./Tips";
 import Experts from "./Experts";
 import Decoration from "./Decoration";
+import PlantOfTheWeek from "./PlantOfTheWeek";
 
 const Home = () => {
   const [plants, setPlants] = useState([]);
@@ -39,6 +40,7 @@ const Home = () => {
         </div>
       </div>
       </div>
+      <PlantOfTheWeek></PlantOfTheWeek>
       <TopPlants plants={plants}></TopPlants>
       <Tips></Tips>
       <Experts></Experts>
