@@ -9,36 +9,34 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Slider = ({ plants }) => {
   return (
     <Swiper
-      spaceBetween={30}
+      spaceBetween={25}
       centeredSlides={true}
-      slidesPerView={2}
-      // loop={Infinity}
+      loop={true}
       autoplay={{
-        delay: 1000,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       style={{
         "--swiper-navigation-color": "#22c55e",
         "--swiper-pagination-color": "#22c55e",
       }}
-      pagination={{
-        clickable: true,
-      }}
+      pagination={{ clickable: true }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
+      breakpoints={{
+        320: { slidesPerView: 1, centeredSlides: true },
+      }}
     >
-      <div className="">
-        {plants.map((plant,index) => (
-          <SwiperSlide key={index}>
-            <img
-              className="w-full h-[600px] object-cover rounded-2xl "
-              src={plant.image}
-              alt=""
-            />
-          </SwiperSlide>
-        ))}
-      </div>
+      {plants?.map((plant, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={plant.image}
+            alt={plant.plantName}
+            className="w-full h-[350px] md:h-[450px] lg:h-[550px] object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

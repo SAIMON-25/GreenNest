@@ -22,7 +22,7 @@ const PlantsLayout = () => {
         </h1>
       </div>
       <div className="flex justify-between my-10 ">
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-md sm:text-2xl font-semibold">
           Total Plants ({plants.length})
         </h1>
         <div className="relative">
@@ -32,12 +32,12 @@ const PlantsLayout = () => {
           <input
             type="text"
             placeholder="Search here"
-            className="border border-gray-200 w-64 h-8 bg-green-100 rounded-lg px-2"
+            className="border border-gray-200 sm:w-64 h-8 bg-green-100 rounded-lg px-2"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid sm:grid-cols-4 gap-5">
         {plants.map((plant,index) => (
           <PlantCard key={index} plant={plant}></PlantCard>
         ))}

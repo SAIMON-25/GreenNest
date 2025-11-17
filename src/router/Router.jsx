@@ -7,6 +7,7 @@ import PlantDetails from "../components/PlantDetails";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import PrivateRoute from "../private/PrivateRoute";
+import Profile from "../components/Profile";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,6 @@ const router = createBrowserRouter([
         index: true,
         element: <Home></Home>,
       },
-
       {
         path: "/*",
         element: <Error></Error>,
@@ -42,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
     ],
   },

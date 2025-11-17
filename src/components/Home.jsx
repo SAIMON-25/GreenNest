@@ -22,7 +22,7 @@ const Home = () => {
       <div className="relative my-10">
         <Slider plants={plants}></Slider>
       <div className=" text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-10">
-        <h1 className="text-5xl md:text-5xl font-bold text-primary leading-tight">
+        <h1 className="text-2xl  md:text-5xl font-bold text-primary leading-tight">
           Bring Nature Home 🌱
         </h1>
         <p className="text-lg text-base-100 mt-3">

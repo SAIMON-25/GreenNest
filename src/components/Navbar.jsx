@@ -1,21 +1,17 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router";
-import userIcon from '../assets/user.png'
+import userIcon from "../assets/user.png";
 import AuthContext from "../context/AuthContext";
 import toast, { Toaster } from "react-hot-toast";
 
-
-
 const Navbar = () => {
-    const {user,logoutUser} = useContext(AuthContext);
-  
-  const handleLogout = ()=>{
-    logoutUser()
-    .then(()=>{
-      toast.success('Successfully Logout!!!')
-    })
-  }
-    
+  const { user, logoutUser } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logoutUser().then(() => {
+      toast.success("Successfully Logout!!!");
+    });
+  };
 
   const navLinks = (
     <>
@@ -64,7 +60,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </div>
           <ul
@@ -74,7 +75,6 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-
 
         <Link to="/" className="text-2xl font-bold text-primary">
           GreenNest
@@ -90,7 +90,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full ring-2 ring-primary ring-offset-base-200 ring-offset-4">
-               <img src={user.photoURL || userIcon } alt="user avatar" />
+                <img src={user.photoURL || userIcon} alt="user avatar" />
               </div>
             </label>
             <ul
@@ -98,10 +98,15 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <span className="font-semibold text-primary">{user.displayName || "User"}</span>
+                <Link to={'/profile'} className="font-semibold text-primary">
+                  {user.displayName || "User"}
+                </Link>
               </li>
               <li>
-                <button onClick={handleLogout} className="text-error hover:text-error">
+                <button
+                  onClick={handleLogout}
+                  className="text-error hover:text-error"
+                >
                   Logout
                 </button>
               </li>
@@ -118,7 +123,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-       <Toaster />
+      <Toaster />
     </div>
   );
 };
